@@ -11,7 +11,7 @@ router.get("/", (req, res, next) => {
 	pool.query(sql, (err, success) => {
 		if (err) {
 			return next(err);
-		}
+		};
 		if (success.length > 0) {
 			// 创建一个二维数组
 			let arr = []
@@ -27,7 +27,7 @@ router.get("/", (req, res, next) => {
 					arr.push(minArr)
 				}
 				//向小数组添加数据
-				minArr.push(item)
+				minArr.push(item);
 			})
 			res.send({
 				code: 200,
@@ -43,6 +43,8 @@ router.get("/", (req, res, next) => {
 	})
 })
 
+
+// 单曲点击
 
 // 导出模块
 module.exports = router;
