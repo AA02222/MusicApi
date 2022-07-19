@@ -1,0 +1,118 @@
+/*index*/
+.wrapper_index {
+  position: fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  margin:auto;
+}
+
+.wrapper_index .container {
+  display: flex;
+  width: 90%;
+  min-height: 85%;
+  margin:30px auto;
+  background-color: #4596FB;
+}
+
+/*左导航 start*/
+.wrapper_index .container .left-sidebar {
+  width: 20%;
+  background-color: #000;
+}
+
+.wrapper_index .container .left-sidebar .logo {
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper_index .container .left-sidebar .logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.wrapper_index .container .left-sidebar .list p {
+  height: 50px;
+  line-height: 50px;
+  margin: 40px 0 14px 40px;
+}
+
+.wrapper_index .container .left-sidebar .list .item {
+  position: relative;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*添加小滑快   暂时应该会存在BUG*/
+.container .left-sidebar .list .item:hover::after{
+  position:absolute;
+  display: block;
+  content:"";
+  width:2px ;
+  height: 22px;
+  line-height: 22px;
+  top:28%;
+  right:0;
+  background-color: red;
+}
+
+.wrapper_index .container .left-sidebar .list .item a {
+  font-size: 1.5em;
+  margin-left: 10px
+}
+
+/*最后一个li 加margin-bottom 40px*/
+.wrapper_index .container .left-sidebar .list .item:last-child {
+  margin-bottom: 40px;
+}
+/*左导航 end*/
+
+/*右导航  start*/
+
+/*header start*/
+.wrapper_index .container .right-sidebar{
+  width: 80%;
+}
+.wrapper_index .container .right-sidebar .header{
+  display: flex;
+  height: 64px;
+  background-color: #000;
+}
+.wrapper_index .container .right-sidebar .header .nav{
+  display: flex;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper_index .container .right-sidebar .header .nav li{
+  width:33.33%;
+  text-align: center;
+}
+.wrapper_index .container .right-sidebar .search{
+  display: flex;
+  width: 35%;
+  margin:9px 0;
+  align-items: center;
+  border:1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.wrapper_index .container .right-sidebar .search input{
+  width:100%;
+  height: 45px;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  padding:0 5px
+}
+/*header end*/
+/*右导航  end*/
+
+
+

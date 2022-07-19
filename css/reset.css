@@ -1,0 +1,58 @@
+/*重置样式*/
+body, html, div, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, form, a, input, th, td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+/*设置行号*/
+body {
+  font: 16px 庞门正道标题体, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+/*白色字体*/
+.fff{
+  color:#fff
+}
+/*字体大小*/
+.f24{
+  font-size: 1.5em;
+}
+/*a标签*/
+a {
+  text-decoration: none;
+  color: #ccc
+}
+
+.wh30{
+  width: 30px;
+  height: 30px;
+}
+
+/*清除li小圆点*/
+ol, ul {
+  list-style: none;
+}
+
+/*左右浮动*/
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+
+/*清除浮动*/
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/*margin padding*/
+.ml-10{
+  margin-left:10px
+}
+

@@ -1,0 +1,96 @@
+/* login页面 */
+.wrapper {
+  position: relative;
+  padding-bottom: 57%;
+  width: 100%;
+}
+/*title*/
+.wrapper .title{
+  position:absolute;
+  width:460px;
+  top:20%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size: 40px;
+  z-index: 10;
+  font-family: '华文楷体', sans-serif;
+  text-align: center;
+  background: -webkit-linear-gradient(45deg, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wrapper .title::after{
+  content: "—— 希望以后的日子里，眼里是光，笑里是坦荡";
+  display: block;
+  margin:20px 0  0 100px;
+  font-size: 16px;
+  background: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*主体版心*/
+.wrapper .main{
+  width: 460px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 1000;
+  border-radius:50px;
+  box-shadow: 0 0 2px 2px rgba(71,167,235,.86);;
+}
+
+.wrapper .main .main_img {
+  width:80px;
+  margin:20px auto;
+}
+/*头像*/
+.wrapper .main  img {
+  width: 100%;
+  border:1px solid #ccc;
+  border-radius: 50px;
+  opacity: .7;
+}
+/*用户登陆验证*/
+.wrapper .main .login{
+  width: 300px;
+  margin: 0 auto;
+}
+
+.wrapper .main .login label{
+  color:#4596FB;
+}
+.wrapper .main .login input{
+  display: block;
+  width: 100%;
+  height: 35px;
+  margin:20px 0;
+  padding: 0 10px;
+  color: #57F2CC;
+  background-color: rgba(255,255,255,.5);
+}
+
+.wrapper .main .login button{
+  width:100%;
+  height: 30px;
+  margin:0 0 20px 5px;
+  color:#57c6e1;
+  background-image: linear-gradient(to right, #a8edea 0%, #fed6e3 100%);
+}
+.wrapper video {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+  right: 0;
+   object-fit: fill;
+  vertical-align: middle;
+}
+
+
+
+
+
+
