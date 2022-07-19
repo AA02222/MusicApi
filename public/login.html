@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>云音乐欢迎你</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+<!--外层宽度-->
+<div class="wrapper">
+  <!--    标题-->
+  <div class="title">小清在线云音乐</div>
+  <!-- 后台管理页面 -->
+  <div class="main">
+    <!-- 后台管理员头像-->
+    <div class="main_img">
+      <img src="../img/WechatIMG4.jpeg" alt="">
+    </div>
+    <!--    管理员登陆-->
+    <div class="login">
+      <div class="user">
+        <label for="user">管理员</label>
+        <input name="user" id="user" type="text" placeholder="请输入您的管理员账号">
+      </div>
+      <div class="upwd">
+        <label for="upwd">密码</label>
+        <input name="upwd" id="upwd" type="password" placeholder="请输入您的管理员密码">
+      </div>
+      <button>登陆</button>
+    </div>
+  </div>
+  <!--  背景动态视频-->
+  <!--  <video  id="video" src="../video/6_15488489003626.MP4" muted autoplay loop></video>-->
+  <video id="video" playsinline src="../video/5_15488489003480.mp4" muted autoplay loop></video>
+</div>
+<script>
+  // 定义一个自动播放  暂时想不到
+  window.onload = function () {
+    let video = document.getElementById("video");
+    //防止用户右键触发事件
+    video.oncontextmenu = function () {
+      // return false
+    }
+  }
+  // 用户名失去焦点发起AJAX验证
+
+</script>
+</body>
+</html>
